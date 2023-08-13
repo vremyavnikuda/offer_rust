@@ -41,6 +41,13 @@ fn grow(nums:Vec<i32>)->i32{
     nums.iter().product()
 }
 
+fn boolean_to_string(b:bool)->String{
+    //переводим bool значение -> в значение строки
+    b.to_string()
+}
+
+
+
 #[cfg(test)]
 mod tests{
     use super::*;
