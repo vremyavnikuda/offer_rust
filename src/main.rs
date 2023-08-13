@@ -1,7 +1,8 @@
-fn main() {
+fn main() -> i32 {
     println!("Hello, world!");
     sum(2,1);
     number_to_string(3);
+    grow(vec![1,2,3,4,5])
 }
 
 
@@ -14,12 +15,15 @@ fn number_to_string(i:i32)->String{
     println!("{}", i);
     return i.to_string();
 }
+
 //поиск самой короткой строки
 fn find_short(s:&str)->u32{
     //сплитуем каждое слово строки в коллекцию
     let words:Vec<&str>=s.split_whitespace().collect();
-    //присваем переменной shorts_words самое длинной слово в коллекции
+
+    //присвоим переменной shorts_words самое длинной слово в коллекции
     let mut shorts_words=u32::MAX;
+
     //итерируем значения коллекции => ищем самое короткое слово в коллекции
     for word in words {
 
@@ -32,3 +36,19 @@ fn find_short(s:&str)->u32{
     println!("{}", shorts_words);
     shorts_words
 }
+
+fn grow(nums:Vec<i32>)->i32{
+    nums.iter().product()
+}
+
+#[cfg(test)]
+mod tests{
+    use super::*;
+    #[test]
+    fn basic_test() {
+        assert_eq!(grow(vec![1, 2, 3]), 6);
+        assert_eq!(grow(vec![4, 1, 1, 1, 4]), 16);
+        assert_eq!(grow(vec![2, 2, 2, 2, 2, 2]), 64);
+    }
+}
+
