@@ -1,4 +1,4 @@
-use crate::club::{club, name_user};
+use crate::club::{club, name_user, num_bool};
 
 mod club;
 
@@ -9,6 +9,7 @@ fn main() {
     //grow(vec![1,2,3,4,5])
     club();
     name_user();
+    num_bool();
 }
 
 
