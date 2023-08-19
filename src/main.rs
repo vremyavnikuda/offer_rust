@@ -1,8 +1,14 @@
+use crate::club::{club, name_user};
+
+mod club;
+
 fn main() {
     println!("Hello, world!");
     sum(2, 1);
     number_to_string(3);
     //grow(vec![1,2,3,4,5])
+    club();
+    name_user();
 }
 
 
