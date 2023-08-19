@@ -1,4 +1,4 @@
-use crate::club::{club, name_user, num_bool};
+use crate::club::{club, cycle_num, name_user, num_bool};
 
 mod club;
 
@@ -10,6 +10,7 @@ fn main() {
     club();
     name_user();
     num_bool();
+    cycle_num();
 }
 
 

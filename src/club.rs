@@ -26,3 +26,11 @@ pub(crate) fn num_bool() -> [(); 1] {
     };
     [println!("{}", num)]
 }
+
+pub(crate) fn cycle_num(){
+    let mut num=0;
+    while num<=3 {
+        println!("{}",num);
+        num+=1;
+    }
+}
