@@ -1,3 +1,6 @@
+use std::io;
+use std::io::Read;
+
 pub(crate) fn club() {
     let age: i8 = 20;
     if age >= 18 {
@@ -32,5 +35,27 @@ pub(crate) fn cycle_num(){
     while num<=3 {
         println!("{}",num);
         num+=1;
+    }
+}
+
+pub(crate) fn is_exit(){
+    let mut year = String::new();
+
+    io::stdin()
+        .read_line(&mut year)
+        .expect("Failed to read input");
+
+    let year:i8=match year.trim().parse(){
+        Ok(num)=>num,
+        Err(_)=>{
+            eprint!("Invalid input, please enter a valid number");
+            return;
+        }
+    };
+
+    let is_old: bool= year>=18;
+    match is_old {
+        true => {println!("Проходите")}
+        false => {println!("Ваш возраст меньше нужного")}
     }
 }
