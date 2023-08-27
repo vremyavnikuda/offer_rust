@@ -7,7 +7,7 @@ pub(crate) fn club() {
         println!("Можете проходить в клуб")
     } else {
         println!("Вам меньше нужного возраста")
-    }
+    };
 }
 
 pub(crate) fn name_user() {
@@ -16,7 +16,7 @@ pub(crate) fn name_user() {
         println!("Имя пользователя неправильно указана")
     } else {
         println!("Добро пожаловать {} ", name)
-    }
+    };
 }
 
 pub(crate) fn num_bool() -> [(); 1] {
@@ -26,7 +26,7 @@ pub(crate) fn num_bool() -> [(); 1] {
         1
     } else {
         0
-    };
+};
     [println!("{}", num)]
 }
 
@@ -35,7 +35,7 @@ pub(crate) fn cycle_num(){
     while num<=3 {
         println!("{}",num);
         num+=1;
-    }
+    };
 }
 
 pub(crate) fn is_exit(){
@@ -57,5 +57,10 @@ pub(crate) fn is_exit(){
     match is_old {
         true => {println!("Проходите")}
         false => {println!("Ваш возраст меньше нужного")}
-    }
+    };
+}
+
+pub(crate) fn multiply(a:i32, b:i32) -> i32 {
+    //возвращаем результат умножения
+    return a*b
 }

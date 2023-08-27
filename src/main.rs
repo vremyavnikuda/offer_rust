@@ -57,6 +57,7 @@ fn boolean_to_string(b: bool) -> String {
 
 #[cfg(test)]
 mod tests {
+    use crate::club::multiply;
     use super::*;
 
     #[test]
@@ -64,6 +65,11 @@ mod tests {
         assert_eq!(grow(vec![1, 2, 3]), 6);
         assert_eq!(grow(vec![4, 1, 1, 1, 4]), 16);
         assert_eq!(grow(vec![2, 2, 2, 2, 2, 2]), 64);
+    }
+
+    #[test]
+    fn returns_expected() {
+        assert_eq!(multiply(3, 5), 15)
     }
 }
 
