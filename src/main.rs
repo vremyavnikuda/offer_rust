@@ -1,9 +1,11 @@
 use crate::club::{club, cycle_num, is_exit, name_user, num_bool};
+use crate::penguin_data::penguin_data;
 
 mod club;
+mod penguin_data;
 
 fn main() {
-    println!("Hello, world!");
+    /*println!("Hello, world!");
     sum(2, 1);
     number_to_string(3);
     //grow(vec![1,2,3,4,5])
@@ -11,7 +13,9 @@ fn main() {
     name_user();
     num_bool();
     cycle_num();
-    is_exit();
+    is_exit();*/
+    penguin_data("\
+    common name , length (cm) Little penguin , 33 Yellow-eyed penguin , 65 Fiordland penguin , 60 Invalid ,data");
 }
 
 

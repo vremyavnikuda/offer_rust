@@ -1,5 +1,4 @@
 use std::io;
-use std::io::Read;
 
 pub(crate) fn club() {
     let age: i8 = 20;
