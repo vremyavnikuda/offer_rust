@@ -1,5 +1,6 @@
 use std::f32::consts::E;
 use std::io::BufRead;
+use std::ptr::null;
 
 pub(crate) fn penguin_data(random_text:&str){
 
@@ -22,5 +23,21 @@ pub(crate) fn penguin_data(random_text:&str){
                 }
             }
         }
+    }
+}
+
+fn count_sheep(sheep:&[bool])-> u8 {
+    sheep.iter().filter(|&&present| present).count() as u8
+}
+
+#[cfg(test)]
+mod test{
+    use crate::penguin_data::count_sheep;
+
+    #[test]
+    fn returns_correct_sheep_count() {
+        assert_eq!(count_sheep(&[false]), 0);
+        assert_eq!(count_sheep(&[true]), 1);
+        assert_eq!(count_sheep(&[true, false]), 1);
     }
 }

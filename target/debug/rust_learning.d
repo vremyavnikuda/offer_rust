@@ -1,1 +1,1 @@
-/home/vremyavnikuda/repository/offer_rust/target/debug/rust_learning: /home/vremyavnikuda/repository/offer_rust/src/club.rs /home/vremyavnikuda/repository/offer_rust/src/main.rs
+/home/andrew/repository/offer_rust/target/debug/rust_learning: /home/andrew/repository/offer_rust/src/club.rs /home/andrew/repository/offer_rust/src/main.rs /home/andrew/repository/offer_rust/src/penguin_data.rs
