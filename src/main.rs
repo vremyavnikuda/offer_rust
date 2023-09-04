@@ -4,6 +4,7 @@ use crate::penguin_data::penguin_data;
 mod club;
 mod penguin_data;
 mod string_to_array;
+mod get_volume_of_cuboid;
 
 fn main() {
     println!("Hello, world!");
