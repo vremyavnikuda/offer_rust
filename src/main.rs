@@ -5,6 +5,7 @@ mod club;
 mod penguin_data;
 mod string_to_array;
 mod get_volume_of_cuboid;
+mod guarter_of;
 
 fn main() {
     println!("Hello, world!");
