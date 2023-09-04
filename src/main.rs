@@ -3,6 +3,7 @@ use crate::penguin_data::penguin_data;
 
 mod club;
 mod penguin_data;
+mod string_to_array;
 
 fn main() {
     println!("Hello, world!");

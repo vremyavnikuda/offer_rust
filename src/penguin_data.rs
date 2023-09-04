@@ -55,13 +55,6 @@ mod test{
     fn assertion(expected : Vec<u32>, inputs : (u32, u32)) {
         let actual = count_by(inputs.0, inputs.1);
 
-        assert!(
-            expected == actual,
-            "\nTest failed!\n expected: [{}]\n actual: [{}]\n x: {}\n n: {}\n"
-            , expected.iter().join(", ")
-            , actual.iter().join(", ")
-            , inputs.0
-            , inputs.1
-        );
+        assert_eq!(expected, actual, "\nTest failed!\n expected: [{}]\n actual: [{}]\n x: {}\n n: {}\n", expected.iter().join(", "), actual.iter().join(", "), inputs.0, inputs.1);
     }
 }
