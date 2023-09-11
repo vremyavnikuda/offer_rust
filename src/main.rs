@@ -8,6 +8,7 @@ mod get_volume_of_cuboid;
 mod guarter_of;
 mod task;
 mod paperwork;
+mod positive_sum;
 
 fn main() {
     println!("Hello, world!");
