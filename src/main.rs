@@ -7,6 +7,7 @@ mod string_to_array;
 mod get_volume_of_cuboid;
 mod guarter_of;
 mod task;
+mod paperwork;
 
 fn main() {
     println!("Hello, world!");
