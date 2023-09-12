@@ -9,6 +9,7 @@ mod guarter_of;
 mod task;
 mod paperwork;
 mod positive_sum;
+mod two_sum;
 
 fn main() {
     println!("Hello, world!");
