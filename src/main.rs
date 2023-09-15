@@ -10,6 +10,7 @@ mod task;
 mod paperwork;
 mod positive_sum;
 mod two_sum;
+mod count_duplicates;
 
 fn main() {
     println!("Hello, world!");
